@@ -1,0 +1,45 @@
+@import 'base';
+
+header {
+    @include flex-properties($justify: flex-start);
+    padding: 5em 4em;
+
+    #logoAbel {
+        width: 45%;
+    }
+}
+
+main {
+    @include flex-properties($direction: column, $gap: 4em);
+
+    #topo { 
+        h1 {
+            font-size: 4em;
+        }
+        
+        span {
+            font-size: 1.6em;
+        }
+    }
+    
+    #carrinhos {
+        @include flex-properties($direction: column, $gap: 2em);
+        width: 100%;
+    
+        button {
+            @include flex-properties();
+            height: 6em;
+            padding: 1.3em;
+            border-radius: 1.8em;
+
+            &::before {
+                height: 6em;
+                border-radius: 20px;
+            }
+
+            span {
+                font-size: 1.8em;
+            }
+        }
+    }
+}

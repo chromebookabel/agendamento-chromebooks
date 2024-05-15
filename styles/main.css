@@ -1,0 +1,270 @@
+* {
+  font-family: "Poppins", sans-serif;
+  color: white;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+body {
+  background-color: #0865BF;
+}
+
+header {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 1em 0 2em 2em;
+}
+header #logoAbel {
+  width: 50%;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 2.5em;
+}
+main #topo {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+main #topo h1 {
+  display: inline-block;
+  font-size: 2.5em;
+  text-transform: uppercase;
+}
+main #topo span {
+  font-size: 1em;
+  text-align: center;
+}
+main #carrinhos {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1.5em;
+  width: 60%;
+}
+main #carrinhos button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  width: 100%;
+  height: 5em;
+  padding: 1.3em;
+  border: 1px solid white;
+  border-radius: 1.8em;
+  outline: none;
+  background-color: transparent;
+  text-align: center;
+  text-transform: uppercase;
+  transition: 1.5s ease;
+  overflow: hidden;
+}
+main #carrinhos button:hover, main #carrinhos button:active {
+  cursor: pointer;
+}
+main #carrinhos button::before {
+  content: " ";
+  position: absolute;
+  bottom: 0px;
+  left: 0px;
+  width: 0px;
+  height: 5em;
+  background-color: #ff8a05;
+  z-index: -1;
+  transition: all 1s;
+  border-radius: 20px;
+}
+main #carrinhos button:hover::before {
+  width: 100%;
+}
+main #carrinhos button span {
+  font-size: 1.2em;
+  font-weight: 600;
+}
+
+@media screen and (min-height: 630px) and (max-width: 1024px) {
+  header {
+    padding: 0;
+  }
+  header #logoAbel {
+    position: absolute;
+    top: 2em;
+    left: 3em;
+  }
+}
+@media screen and (min-width: 600px) and (max-width: 1024px) {
+  * {
+    font-family: "Poppins", sans-serif;
+    color: white;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  html {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+  }
+  body {
+    background-color: #0865BF;
+  }
+  header {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 5em 4em;
+  }
+  header #logoAbel {
+    width: 45%;
+  }
+  main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 4em;
+  }
+  main #topo h1 {
+    font-size: 4em;
+  }
+  main #topo span {
+    font-size: 1.6em;
+  }
+  main #carrinhos {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2em;
+    width: 100%;
+  }
+  main #carrinhos button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 6em;
+    padding: 1.3em;
+    border-radius: 1.8em;
+  }
+  main #carrinhos button::before {
+    height: 6em;
+    border-radius: 20px;
+  }
+  main #carrinhos button span {
+    font-size: 1.8em;
+  }
+}
+@media screen and (min-width: 1025px) {
+  * {
+    font-family: "Poppins", sans-serif;
+    color: white;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  html {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+  }
+  body {
+    background-color: #0865BF;
+  }
+  html {
+    display: block;
+    width: 100vw;
+  }
+  header, main {
+    width: 100%;
+  }
+  body {
+    height: 100%;
+  }
+  header {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 2em 0 3em 3em;
+  }
+  header #logoAbel {
+    width: 20%;
+  }
+  main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 3em;
+  }
+  main #topo h1 {
+    font-size: 3em;
+  }
+  main #topo span {
+    font-size: 1em;
+  }
+  main #carrinhos {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1em;
+    width: 30%;
+  }
+  main #carrinhos button {
+    position: relative;
+    height: 4.5em;
+    padding: 1.3em;
+    border-radius: 1.4em;
+  }
+  main #carrinhos button:hover, main #carrinhos button:active {
+    cursor: pointer;
+  }
+  main #carrinhos button span {
+    font-size: 1.2em;
+  }
+}
+@media screen and (min-width: 1025px) and (min-height: 800px) {
+  main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 4em;
+  }
+  main #topo h1 {
+    font-size: 3.5em;
+  }
+  main #topo span {
+    font-size: 1.6em;
+  }
+  main #carrinhos {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1.5em;
+  }
+  main #carrinhos button {
+    padding: 2.5em;
+  }
+  main #carrinhos button span {
+    font-size: 1.8em;
+  }
+}/*# sourceMappingURL=main.css.map */

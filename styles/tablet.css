@@ -1,0 +1,65 @@
+* {
+  font-family: "Poppins", sans-serif;
+  color: white;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+body {
+  background-color: #0865BF;
+}
+
+header {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 5em 4em;
+}
+header #logoAbel {
+  width: 45%;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 4em;
+}
+main #topo h1 {
+  font-size: 4em;
+}
+main #topo span {
+  font-size: 1.6em;
+}
+main #carrinhos {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 2em;
+  width: 100%;
+}
+main #carrinhos button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 6em;
+  padding: 1.3em;
+  border-radius: 1.8em;
+}
+main #carrinhos button::before {
+  height: 6em;
+  border-radius: 20px;
+}
+main #carrinhos button span {
+  font-size: 1.8em;
+}/*# sourceMappingURL=tablet.css.map */

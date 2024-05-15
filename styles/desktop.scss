@@ -1,0 +1,85 @@
+@import 'base';
+
+html {
+    @include flex-properties($display: block, $direction: null, $justify: null, $align: null);
+    width: 100vw;
+}
+
+header, main {
+    width: 100%;
+}
+
+body {
+    height: 100%;
+}
+
+header {
+    @include flex-properties($justify: flex-start);
+    padding: 2em 0 3em 3em;
+    
+    #logoAbel {
+        width: 20%;
+    }
+}
+
+main {
+    @include flex-properties($direction: column, $gap: 3em);
+
+    #topo { 
+        h1 {
+            font-size: 3em;
+        }
+
+        span {
+            font-size: 1em;
+        }
+    }
+    
+    #carrinhos {
+        @include flex-properties($direction: column, $gap: 1em);
+        width: 30%;
+    
+        button {
+            position: relative;
+            height: 4.5em;
+            padding: 1.3em;
+            border-radius: 1.4em;
+
+            &:hover, &:active {
+                cursor: pointer;
+            }
+
+            span {
+                font-size: 1.2em;
+            }
+        }
+    }
+}
+
+@media screen and (min-height: 800px) {
+    main {
+        @include flex-properties($direction: column, $gap: 4em);
+
+        #topo {
+            h1 {
+                font-size: 3.5em;
+            }
+
+            span {
+                font-size: 1.6em;
+            }
+        }
+
+        #carrinhos {
+            @include flex-properties($direction: column, $gap: 1.5em);
+
+            button {
+                padding: 2.5em;
+
+                span {
+                    font-size: 1.8em;
+                }
+            }
+        }
+    }
+}
