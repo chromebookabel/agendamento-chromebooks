@@ -11,7 +11,8 @@ function isMobile() {
 function redirecionar(pagina) {
     if(isMobile()) {
         setTimeout(function() {
-            window.open(pagina, '_blank');
+            /* window.open(pagina, '_blank'); */
+            window.location.href = pagina;
         }, 1500)
     }
     else {
