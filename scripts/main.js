@@ -21,3 +21,7 @@ function redirecionar(pagina) {
         }, 800)
     }
 }
+
+window.onload = function() {
+    alert('O agendamento de chromebooks está temporariamente suspenso devido ao ACM. O serviço voltará à normalidade na próxima semana, 01/07.')
+}
